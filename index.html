@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehnvim | Portfolio Maan Reehan - Creative Design & Video Editing</title>
+
+    <!-- Meta SEO -->
+    <meta name="description"
+        content="Website portofolio resmi Maan Reehan (Rehnvim). Menyediakan jasa Desain Poster, Feed Instagram, Editing Video, dan Video Commercial berkualitas tinggi.">
+    <meta name="keywords"
+        content="Rehnvim, Maan Reehan, Portofolio Desain, Video Editor Indonesia, Jasa Edit Video, Jasa Desain Feed Instagram, Video Commercial">
+    <meta name="author" content="Maan Reehan">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon (Icons) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">Rehn<span>vim</span></a>
+
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#portfolio" class="nav-link">Portofolio</a>
+                <a href="#services" class="nav-link">Layanan</a>
+                <a href="#about" class="nav-link">Tentang Saya</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </nav>
+
+            <div class="header-actions">
+                <!-- ID ditambahkan untuk mempermudah testing -->
+                <a href="https://wa.me/6288262654150?text=Halo%20Rehnvim,%20saya%20tertarik%20dengan%20jasa%20Anda"
+                    target="_blank" class="btn btn-primary btn-nav" id="wa-btn-nav">
+                    <i class="ri-whatsapp-line"></i> Hubungi Saya
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle menu" id="mobile-toggle">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#portfolio" class="mobile-link">Portofolio</a>
+        <a href="#services" class="mobile-link">Layanan</a>
+        <a href="#about" class="mobile-link">Tentang Saya</a>
+        <a href="#contact" class="mobile-link">Kontak</a>
+        <a href="https://wa.me/6288262654150?text=Halo%20Rehnvim,%20saya%20tertarik%20dengan%20jasa%20Anda"
+            target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+            <i class="ri-whatsapp-line"></i> Hubungi Saya
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="glow-bg glow-purple"></div>
+            <div class="glow-bg glow-cyan"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">Creative Designer & Video Editor</span>
+                    <h1 class="hero-title">Wujudkan Imajinasi & Kebutuhan Kreatif Anda, <br><span
+                            class="text-gradient">Cukup Percayakan pada Saya.</span></h1>
+                    <p class="hero-subtitle">
+                        Halo! Saya <strong>Maan Reehan</strong>, kreator di balik <strong>Rehnvim</strong>. Saya
+                        membantu brand dan individu menyampaikan pesan mereka melalui desain visual yang memukau dan
+                        editing video yang dinamis serta profesional.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <i class="ri-play-circle-line"></i> Lihat Karya
+                        </a>
+                        <a href="https://wa.me/6288262654150?text=Halo%20Rehnvim,%20saya%20tertarik%20dengan%20jasa%20Anda"
+                            target="_blank" class="btn btn-secondary" id="wa-btn-hero">
+                            <i class="ri-whatsapp-line"></i> Konsultasi Gratis
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container reveal-up">
+                    <div class="hero-image-wrapper">
+                        <!-- Profile photo -->
+                        <img src="profile.png" alt="Maan Reehan - Rehnvim" class="hero-image" id="profile-pic">
+                    </div>
+                    <div class="hero-name-badge">
+                        <h3 class="hero-image-name">Maan Reehan</h3>
+                        <span class="hero-image-subtitle">Creative Director & Editor</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Karya Terkini</span>
+                    <h2 class="section-title">Portofolio Pilihan</h2>
+                    <p class="section-subtitle">Tinjau kumpulan karya desain grafis dan editing video terbaik yang
+                        pernah saya kerjakan.</p>
+                </div>
+
+                <!-- Filter Kategori -->
+                <div class="portfolio-filters reveal-up" style="transition-delay: 0.1s;">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+                    <button class="filter-btn" data-filter="poster" id="filter-poster">Poster</button>
+                    <button class="filter-btn" data-filter="social-media" id="filter-social-media">Desain Social
+                        Media</button>
+                    <button class="filter-btn" data-filter="video-reels" id="filter-video-reels">Video Reels</button>
+                </div>
+
+                <!-- Grid Portofolio -->
+                <div class="portfolio-grid reveal-stagger">
+                    <!-- Item 1: BMW M4 Coupe Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="poster">
+                        <div class="portfolio-media">
+                            <img src="bmw_poster.jpg" alt="Poster BMW M4 Coupe" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="bmw_poster.jpg"
+                                    data-title="Poster Otomotif - BMW M4 Coupé">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Poster</span>
+                            <h3 class="portfolio-item-title">Poster Otomotif — BMW M4 Coupé</h3>
+                            <p class="portfolio-item-desc">Kolase poster premium BMW M4 Coupé dengan tata letak multi-panel bergaya majalah otomotif. Memadukan tipografi bold, logo resmi BMW, dan barcode dekoratif untuk kesan prestige yang kuat. Credit: @Reypenyayang Design.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Lisa BLACKPINK Money Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="poster">
+                        <div class="portfolio-media">
+                            <img src="lisa_money_poster.jpg" alt="Poster Lisa BLACKPINK Money"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="lisa_money_poster.jpg"
+                                    data-title="Poster Seni Musik - Lisa 'MONEY'">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Poster</span>
+                            <h3 class="portfolio-item-title">Poster Seni Musik — Lisa BLACKPINK "MONEY"</h3>
+                            <p class="portfolio-item-desc">Poster fan-art hip-hop bertema uang dengan latar hitam bertekstur grunge. Tipografi "LISA" kuning emas bergaya distressed, uang dolar melayang, dan foto Lisa BLACKPINK tampil dominan dengan teks deskripsi lagu di bagian bawah.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Fashion Denim Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="social-media">
+                        <div class="portfolio-media">
+                            <img src="fashion_poster.jpg" alt="Feed Instagram Editorial Fashion"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="fashion_poster.jpg"
+                                    data-title="Feed Instagram - Editorial Fashion">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Desain Social Media</span>
+                            <h3 class="portfolio-item-title">Feed Instagram — Editorial Fashion Denim</h3>
+                            <p class="portfolio-item-desc">Konten feed bergaya mock-up postingan Instagram dengan frame interaktif, foto model denim jacket, ikon engagement (like, comment, share, save), dan username @Reypenyayang. Judul "FASHION" oversized dengan font dekoratif retro mendominasi area atas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Luvia Bag Advertisement -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="social-media">
+                        <div class="portfolio-media">
+                            <img src="luvia_bag_ad.jpg" alt="Iklan Tas Luvia" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="luvia_bag_ad.jpg"
+                                    data-title="Branding Feed - Luvia Bag Luxury">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Desain Social Media</span>
+                            <h3 class="portfolio-item-title">Branding Feed — Luvia Bag Luxury</h3>
+                            <p class="portfolio-item-desc">Visual produk tas bahu kulit hitam premium brand LUVIA dengan latar minimalis abu-putih bersih. Menyajikan logo brand, poin keunggulan produk (2 Straps Includes), dan use case (For Walk, Restaurant, Work) secara clean dan elegan. Credit: @Reypenyayang.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Promo 10.10 Boba/Coffee Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="social-media">
+                        <div class="portfolio-media">
+                            <img src="coffee_promo_poster.jpg" alt="Poster Promo Boba & Coffee 10.10"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="coffee_promo_poster.jpg"
+                                    data-title="Poster Promo Kuliner - Boba & Coffee 10.10">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Desain Social Media</span>
+                            <h3 class="portfolio-item-title">Poster Promo Kuliner — Boba & Coffee 10.10</h3>
+                            <p class="portfolio-item-desc">Poster promosi harbolnas 10.10 dengan warna turquoise-krem yang eye-catching. Menampilkan dua minuman (boba karamel & kopi oreo), harga mulai 10K, petir kuning aksen energik, syarat & ketentuan, serta logo GoFood dan GrabFood.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: National Education Day Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="poster">
+                        <div class="portfolio-media">
+                            <img src="education_day_poster.jpg" alt="Poster Hari Pendidikan Nasional"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="education_day_poster.jpg"
+                                    data-title="Desain Poster - Hari Pendidikan Nasional">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Poster</span>
+                            <h3 class="portfolio-item-title">Desain Poster — Hari Pendidikan Nasional 2026</h3>
+                            <p class="portfolio-item-desc">Poster peringatan Hardiknas berkonsep kalender meja spiral dengan strip hijau nasional di atas. Menampilkan ilustrasi Ki Hajar Dewantara, tanggal 2 Mei dilingkari merah, semboyan "Ing Ngarsa Sung Tulada" dalam tulisan tangan, dan akun sosial media Reypenyayang.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 7: King Kebab Advertisement -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="social-media">
+                        <div class="portfolio-media">
+                            <img src="kebab_poster.jpg" alt="Iklan King Kebab" class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="kebab_poster.jpg"
+                                    data-title="Iklan Media Sosial - King Kebab">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Desain Social Media</span>
+                            <h3 class="portfolio-item-title">Iklan Media Sosial — King Kebab</h3>
+                            <p class="portfolio-item-desc">Desain iklan King Kebab dengan split layout coklat-oranye yang mencolok. Foto Chicken Kebab Wrap menggugah selera, copywriting "hotter, better, tastier!", harga $0.80 Only, serta informasi kontak dan alamat restoran di Sydney NSW.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 8: Nasi Goreng Discount Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="social-media">
+                        <div class="portfolio-media">
+                            <img src="nasigoreng_poster.jpg" alt="Poster Nasi Goreng Discount"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="nasigoreng_poster.jpg"
+                                    data-title="Desain Promo Kuliner - Nasi Goreng 40% OFF">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Desain Social Media</span>
+                            <h3 class="portfolio-item-title">Desain Promo Kuliner — Nasi Goreng 40% OFF</h3>
+                            <p class="portfolio-item-desc">Poster promosi kuliner Indonesia dengan split layout merah-kuning energik. Foto nasi goreng "melayang" di atas mangkuk, badge diskon 40% OFF, info free delivery dengan nomor telepon, tersedia varian ayam & seafood, dan tombol CTA "Order Now".</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 9: Nike Air Jordan Shoe Poster -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="poster">
+                        <div class="portfolio-media">
+                            <img src="nike_jordan_poster.jpg" alt="Poster Nike Air Jordan"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="nike_jordan_poster.jpg"
+                                    data-title="Poster Komersial Produk - Nike Air Jordan">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Poster</span>
+                            <h3 class="portfolio-item-title">Poster Komersial Produk — Nike Air Jordan 1</h3>
+                            <p class="portfolio-item-desc">Poster produk Nike Air Jordan 1 Retro High OG "Court Purple" dengan latar gradien ungu dramatis dan logo Jumpman sebagai watermark. Sepatu melayang di atas podium ungu, tipografi "NIKE AIR JORDAN!" oversized, dan tagline streetwear di bagian bawah.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 10: Mobile Shops Pizza App Interface -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="social-media">
+                        <div class="portfolio-media">
+                            <img src="pizza_app_interface.jpg" alt="UI/UX Mobile Food App"
+                                class="portfolio-img">
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-view-btn preview-design-btn"
+                                    data-img-src="pizza_app_interface.jpg"
+                                    data-title="Desain UI/UX - Mobile Food App Showcase">
+                                    <i class="ri-fullscreen-line"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Desain Social Media</span>
+                            <h3 class="portfolio-item-title">Desain Iklan — Mobile Shops Pizza App</h3>
+                            <p class="portfolio-item-desc">Poster promosi aplikasi pemesanan pizza berlatar hijau solid dengan tipografi "MOBILE SHOPS" dekoratif besar. Mock-up layar HP menampilkan foto pizza pepperoni keluar dari frame, promo kode "REHN", konfirmasi order, domain www.rehnvim.net, dan ikon media sosial.</p>
+                        </div>
+                    </div>
+
+                    <!-- ==================== VIDEO PORTFOLIO ITEMS ==================== -->
+                    <!-- Item 11: Video Reel 1 - Edukasi "Have You Ever" -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="video-reels">
+                        <div class="portfolio-media">
+                            <img src="thumb_reel1.png" alt="Video Edukasi - Have You Ever" class="portfolio-img">
+                            <div class="video-badge"><i class="ri-instagram-line"></i> Reel</div>
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-play-btn"
+                                    data-video-src="https://www.instagram.com/reel/DZNgfJVzzx9/"
+                                    data-title="Video Edukasi — Have You Ever?">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Video Reels</span>
+                            <h3 class="portfolio-item-title">Video Edukasi — "Have You Ever?"</h3>
+                            <p class="portfolio-item-desc">Reels edukatif bertema pertanyaan reflektif dengan teks dinamis "Have you ever" yang tampil dramatis. Menggunakan grid background geometris, color grading kontras tinggi merah-hitam, dan pacing teks yang diatur untuk memancing rasa ingin tahu penonton.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 12: Video Reel 2 - Konten UMKM Meow Cafe -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="video-reels">
+                        <div class="portfolio-media">
+                            <img src="thumb_reel2.png" alt="Konten Social Media UMKM - Meow Meow Cafe"
+                                class="portfolio-img">
+                            <div class="video-badge"><i class="ri-instagram-line"></i> Reel</div>
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-play-btn"
+                                    data-video-src="https://www.instagram.com/reel/DZnI8McTrFf/"
+                                    data-title="Konten Social Media UMKM — Meow Meow Cafe">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Video Reels</span>
+                            <h3 class="portfolio-item-title">Konten Social Media UMKM — Meow Meow Cafe</h3>
+                            <p class="portfolio-item-desc">Reels promosi untuk UMKM cat café @meowmeowcafe.id bergaya mock-up postingan Instagram. Menampilkan suasana kafe, interaksi staf dengan kucing, kolase foto kucing, dan CTA "FOLLOW!" — cocok untuk meningkatkan awareness brand lokal di media sosial.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 13: Video Reel 3 - Intro Creative Double Exposure -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="video-reels">
+                        <div class="portfolio-media">
+                            <img src="thumb_reel3.png" alt="Intro Creative - Maan Reehan Double Exposure"
+                                class="portfolio-img">
+                            <div class="video-badge"><i class="ri-instagram-line"></i> Reel</div>
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-play-btn"
+                                    data-video-src="https://www.instagram.com/reel/DZzCKKVRX1N/"
+                                    data-title="Intro & Creative Edit — Maan Reehan">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Video Reels</span>
+                            <h3 class="portfolio-item-title">Intro & Creative Edit — Maan Reehan</h3>
+                            <p class="portfolio-item-desc">Video intro personal kreatif dengan teknik double exposure — siluet Maan Reehan melebur bersama lanskap langit senja yang dramatis. Identitas "Creative Worker" muncul elegan di sisi kanan, mencerminkan jiwa seni dan visi kreatif yang mendalam.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 14: Video Reel 4 - Cinematic Working Shot -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="video-reels">
+                        <div class="portfolio-media">
+                            <img src="thumb_reel4.png" alt="Video Cinematic - Working Shot"
+                                class="portfolio-img">
+                            <div class="video-badge"><i class="ri-instagram-line"></i> Reel</div>
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-play-btn"
+                                    data-video-src="https://www.instagram.com/reel/DZ4cHTMx7JC/"
+                                    data-title="Cinematic Shot — Behind The Work">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Video Reels</span>
+                            <h3 class="portfolio-item-title">Cinematic Shot — Behind The Work</h3>
+                            <p class="portfolio-item-desc">Video sinematik bergaya "behind the scenes" yang menangkap momen bekerja di depan laptop dengan latar dinding biru dan kabel-kabel yang artistik. Color grading cool-tone teal memberikan nuansa fokus dan profesional yang kuat.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 15: Video Reel 5 - Intro Keren MALAZZ -->
+                    <div class="portfolio-item card-glass reveal-item" data-category="video-reels">
+                        <div class="portfolio-media">
+                            <img src="thumb_reel5.png" alt="Intro Keren - MALAZZ"
+                                class="portfolio-img">
+                            <div class="video-badge"><i class="ri-instagram-line"></i> Reel</div>
+                            <div class="portfolio-overlay">
+                                <button class="portfolio-play-btn"
+                                    data-video-src="https://www.instagram.com/reel/DZ7HmLaRyCi/"
+                                    data-title="Cinematic Intro — MALAZZ">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <span class="portfolio-item-tag">Video Reels</span>
+                            <h3 class="portfolio-item-title">Cinematic Intro — MALAZZ</h3>
+                            <p class="portfolio-item-desc">Intro sinematik bergaya layar utama video game dengan judul "MALAZZ" bertekstur kasar di sudut kanan atas. Shot gelap seseorang di depan studio/monitor, dilengkapi menu Play, Continue, Settings, dan Quit — membangun suasana misterius dan sinematik yang memukau.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="glow-bg glow-purple-right"></div>
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Layanan Kreatif</span>
+                    <h2 class="section-title">Apa Yang Saya Tawarkan</h2>
+                    <p class="section-subtitle">Solusi lengkap untuk membantu branding visual Anda di media sosial dan
+                        media digital.</p>
+                </div>
+
+                <div class="services-grid reveal-stagger">
+                    <!-- Service 1 -->
+                    <div class="service-card card-glass reveal-item">
+                        <div class="service-icon">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <h3 class="service-title">Desain Poster & Feed Instagram</h3>
+                        <p class="service-desc">Visualisasi yang menarik untuk materi promosi digital, feed estetis,
+                            carousel edukatif, dan poster acara yang unik.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card card-glass reveal-item">
+                        <div class="service-icon">
+                            <i class="ri-video-line"></i>
+                        </div>
+                        <h3 class="service-title">Editing Video</h3>
+                        <p class="service-desc">Penyuntingan video berkualitas untuk konten YouTube, vlogging,
+                            dokumenter, dengan pemotongan yang halus dan sound design yang hidup.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card card-glass reveal-item">
+                        <div class="service-icon">
+                            <i class="ri-advertisement-line"></i>
+                        </div>
+                        <h3 class="service-title">Video Commercial</h3>
+                        <p class="service-desc">Video iklan kreatif berdurasi pendek hingga menengah yang didesain
+                            khusus untuk meningkatkan penjualan produk atau kesadaran brand Anda.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card card-glass reveal-item">
+                        <div class="service-icon">
+                            <i class="ri-magic-line"></i>
+                        </div>
+                        <h3 class="service-title">Segala Macam Bentuk Editing</h3>
+                        <p class="service-desc">Butuh editing khusus? Dari motion graphics sederhana, animasi teks,
+                            koreksi warna (color grading), hingga video kompilasi kustom.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container about-container">
+                <div class="about-info">
+                    <span class="section-tag reveal-up">Tentang Kreator</span>
+                    <h2 class="section-title reveal-up" style="transition-delay: 0.1s;">Di Balik Rehnvim</h2>
+                    <p class="about-text reveal-up" style="transition-delay: 0.2s;">
+                        Saya percaya bahwa setiap ide hebat layak mendapatkan presentasi visual yang luar biasa. Melalui
+                        <strong>Rehnvim</strong>, saya berkomitmen untuk menggabungkan keterampilan teknis editing video
+                        dengan kreativitas desain grafis untuk menghasilkan produk visual yang memiliki pengaruh kuat.
+                    </p>
+                    <p class="about-text reveal-up hide-mobile" style="transition-delay: 0.3s;">
+                        Saya selalu memperhatikan detail kecil, konsistensi warna, ritme/pacing video, serta kecocokan
+                        musik latar untuk memastikan konten tidak hanya indah dilihat tetapi juga mampu menyampaikan
+                        pesan secara efektif.
+                    </p>
+
+                    <!-- Skills -->
+                    <div class="skills-wrapper reveal-up" style="transition-delay: 0.4s;">
+                        <h4 class="skills-title">Keahlian & Software Utama:</h4>
+
+                        <div class="skill-item">
+                            <div class="skill-name-percentage">
+                                <span>CapCut (Video Editing)</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill purple" data-width="90%" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name-percentage">
+                                <span>Canva (Social Media Design & Poster)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill cyan" data-width="85%" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name-percentage">
+                                <span>Photoshop (Poster)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill purple" data-width="80%" style="width: 0%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-name-percentage">
+                                <span>After Effects (Motion Graphics)</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill cyan" data-width="75%" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-tag">Hubungi Kami</span>
+                    <h2 class="section-title">Mari Berkolaborasi!</h2>
+                    <p class="section-subtitle">Punya proyek menarik atau butuh konsultasi kebutuhan visual? Hubungi
+                        saya kapan saja.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards Info -->
+                    <div class="contact-info-wrapper reveal-left">
+                        <div class="contact-info-card card-glass">
+                            <div class="info-icon purple">
+                                <i class="ri-whatsapp-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="info-label">WhatsApp Fast Response</h4>
+                                <p class="info-value">+62 882-6265-4150</p>
+                                <a href="https://wa.me/6288262654150?text=Halo%20Rehnvim,%20saya%20tertarik%20dengan%20jasa%20Anda"
+                                    target="_blank" class="info-action">Kirim Pesan Chat <i
+                                        class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card card-glass">
+                            <div class="info-icon cyan">
+                                <i class="ri-instagram-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="info-label">Instagram</h4>
+                                <p class="info-value">@rehnvim</p>
+                                <a href="https://instagram.com/rehnvim" target="_blank" class="info-action">Kunjungi
+                                    Instagram <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card card-glass">
+                            <div class="info-icon purple">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="info-label">Email</h4>
+                                <p class="info-value">rehnvim@gmail.com</p>
+                                <a href="mailto:rehnvim@gmail.com" class="info-action">Kirim Email <i
+                                        class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container card-glass reveal-right">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Nama Anda</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="Masukkan nama lengkap"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Alamat Email</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="nama@email.com"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject" class="form-label">Kebutuhan Layanan</label>
+                                <select id="form-subject" class="form-input form-select" required>
+                                    <option value="" disabled selected>Pilih layanan...</option>
+                                    <option value="Poster">Poster</option>
+                                    <option value="Desain Social Media">Desain Social Media</option>
+                                    <option value="Video Reels">Video Reels / Editing</option>
+                                    <option value="Lainnya">Lainnya / Tanya-tanya</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Detail Pesan / Proyek</label>
+                                <textarea id="form-message" rows="4" class="form-input"
+                                    placeholder="Jelaskan kebutuhan proyek kreatif Anda..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <i class="ri-send-plane-fill"></i> Kirim ke WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo">Rehn<span>vim</span></a>
+                <p class="footer-tagline">Solusi kreatif visual untuk desain digital dan penyuntingan video Anda.</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://instagram.com/rehnvim" target="_blank" class="social-link" aria-label="Instagram"><i
+                        class="ri-instagram-line"></i></a>
+                <a href="https://tiktok.com/@rehnvim" target="_blank" class="social-link" aria-label="TikTok"><i
+                        class="ri-tiktok-line"></i></a>
+                <a href="https://wa.me/6288262654150" target="_blank" class="social-link" aria-label="WhatsApp"><i
+                        class="ri-whatsapp-line"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rehnvim (Maan Reehan). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal Player (Instagram Embed) -->
+    <div class="video-modal" id="video-modal">
+        <div class="video-modal-overlay" id="video-modal-overlay"></div>
+        <div class="video-modal-content card-glass">
+            <button class="video-modal-close" id="video-modal-close" aria-label="Tutup video">
+                <i class="ri-close-line"></i>
+            </button>
+            <h3 class="video-modal-title" id="video-modal-title">Judul Video</h3>
+            <div class="video-embed-wrapper" id="video-embed-container">
+                <!-- Instagram embed will be injected here by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Preview Modal -->
+    <div class="image-modal" id="image-modal">
+        <div class="image-modal-overlay" id="image-modal-overlay"></div>
+        <div class="image-modal-content card-glass">
+            <button class="image-modal-close" id="image-modal-close" aria-label="Tutup pratinjau">
+                <i class="ri-close-line"></i>
+            </button>
+            <h3 class="image-modal-title" id="image-modal-title">Judul Desain</h3>
+            <div class="image-preview-container">
+                <img id="modal-image-preview" src="" alt="Pratinjau Desain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
